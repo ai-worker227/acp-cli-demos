@@ -4,13 +4,13 @@
   "tagline": "Gates a Base token before any swap with a pass / caution / block verdict from fixed rules and every reason listed, and scans an agent wallet for airdrop spam",
   "description": "trade_gate answers pass, caution or block for one Base token from fixed rules over public data: the Honeypot.is buy/sell simulation and taxes, pool liquidity and age, holder concentration, contract verification and ownership, and a Unicode lookalike-name rule, with every reason listed. airdrop_scan marks each ERC-20 a wallet holds as honeypot, dust, batch-airdropped, name-spoofed, ok or unknown, so an agent never approves or trades the spam that reaches every wallet on Base. Both are sold by the live ACP seller aiworker-data and over x402, and the proof is on-chain: four x402 payments and four ACP sandbox jobs with transaction hashes, plus the live scan that found a honeypot and a lookalike in the seller's own wallet. The skill teaches a coding agent to call the gate before a swap and to act on the verdict.",
   "status": "live",
-  "topic": "skills",
+  "topic": "security",
   "topics": [
-    "trading",
     "security",
-    "base",
-    "x402",
-    "acp"
+    "token-safety",
+    "honeypot",
+    "defi",
+    "real-data"
   ],
   "hidden": false,
   "builder": {
@@ -21,7 +21,7 @@
     "repo": "https://github.com/ai-worker227/aiworker-examples",
     "demo": "https://aiworker.duckdns.org/base/airdrop-spam-watch",
     "feedback": "https://github.com/ai-worker227/aiworker-examples/issues",
-    "share": "https://aiworker.duckdns.org/llms.txt"
+    "share": "https://aiworker.duckdns.org/base/airdrop-spam-watch"
   },
   "primitives": [
     "acp",
@@ -39,7 +39,7 @@
       "name": "aiworker-trade-gate",
       "href": "https://github.com/Virtual-Protocol/acp-cli-demos/tree/main/showcase/aiworker-trade-gate/skills/aiworker-trade-gate",
       "sourcePath": "showcase/aiworker-trade-gate/skills/aiworker-trade-gate",
-      "summary": "Check a Base token with the trade gate before any swap, act on pass / caution / block with the listed reasons, and scan the agent's own wallet for airdrop spam \u2014 over x402 (a thirty-line script) or as an ACP job.",
+      "summary": "Check a Base token with the trade gate before any swap, act on pass / caution / block with the listed reasons, and scan the agent's own wallet for airdrop spam \u2014 over x402 (a thirty-line script in the aiworker-examples repo) or as an ACP job.",
       "install": "cp -R showcase/aiworker-trade-gate/skills/aiworker-trade-gate ~/.agents/skills/\ncp -R showcase/aiworker-trade-gate/skills/aiworker-trade-gate ~/.claude/skills/"
     }
   ],
